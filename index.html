@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Editor</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="question-container">
+    <img id="questionImage" class="question-image hidden" alt="Question Image">
+    <div id="questionTitle" class="question-title" contenteditable="false" onclick="makeEditable(this)">Enter your question title here</div>
+</div>
+<div class="container">
+    <div id="answersContainer" class="answers-container"></div>
+    <div id="answerTemplate" class="hidden">
+        <div class="answer-item">
+            <div class="checkbox-container">
+                <input type="checkbox" class="answer-checkbox">
+            </div>
+            <img src="" alt="Answer Image" class="answer-image hidden">
+            <input type="text" class="answer-title" placeholder="Write here">
+            <button class="delete-btn">Delete</button>
+        </div>
+    </div>
+    <div id="addAnswerTemplate" class="hidden">
+        <div class="add-answer-item">
+            <span>Add Answer</span>
+        </div>
+    </div>
+</div>
+<script src="survey.js"></script>
+</body>
+</html>
